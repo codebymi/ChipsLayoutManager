@@ -1,15 +1,15 @@
+apply plugin: 'com.android.library'
 
-apply plugin: 'com.android.application'
 
 android {
-    namespace="com.beloo.chipslayoutmanager.sample"
     compileSdkVersion 34
+    namespace="com.beloo.widget.chipslayoutmanager"
+
     defaultConfig {
-        applicationId "com.beloo.chipslayoutmanager.sample"
         minSdkVersion 24
         targetSdkVersion 34
-        versionCode 1
-        versionName "1"
+        versionCode 2412007
+        versionName "24.12.7"
     }
     buildTypes {
         release {
@@ -17,29 +17,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
 
-
 }
+
 
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    //modules
-    implementation project(':library')
-    //support libraries
-
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation 'com.google.android.material:material:1.1.0'
-
-
-    implementation 'com.github.bumptech.glide:glide:3.7.0'
-
-}
-
+    implementation 'com.google.android.material:material:1.1.0'}
 
