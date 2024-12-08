@@ -11,6 +11,7 @@ android {
         versionCode 2412007
         versionName "24.12.7"
     }
+
     buildTypes {
         release {
             minifyEnabled false
