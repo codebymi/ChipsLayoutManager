@@ -5,7 +5,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import com.mikepenz.materialdrawer.Drawer;
 
 import com.beloo.chipslayoutmanager.sample.R;
 
